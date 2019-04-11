@@ -39,7 +39,7 @@ jobs:
 
       # run tests!
 #      - run: mvn integration-test
-      - run: mvn package
+      - run: mvn package -DskipTests
 
       - store_test_results:
           path: target/surefire-reports
